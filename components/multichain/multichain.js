@@ -16,7 +16,7 @@ export default function Multichain({ closeMultichain }) {
   const [ checked, setChecked ] = useState(false)
 
   const navigateToMultichain = () => {
-    window.open("https://multichain.xyz", "_blank")
+    window.open("https://yieldwolf.finance", "_blank")
   }
 
   const handleChange = () => {
@@ -71,8 +71,10 @@ export default function Multichain({ closeMultichain }) {
     <Paper elevation={ 1 } className={ classes.chainContainer } key={ 'multichain' } >
       <ThemeProvider theme={theme}>
         <div className={ classes.topInfo }>
-          <img src='/multichain-logo.png' width={ 126 } height={ 126 } className={ classes.avatar } />
-          <Typography variant='subtitle1' className={ classes.descriptionText} align='center' >Manage over 120 tokens and multi-chain assets with fully supported cross chain transactions.</Typography>
+          <img src='/yieldwolf-logo.svg' width={ 126 } height={ 126 } className={ classes.avatar } />
+          <Typography variant='subtitle1' className={ classes.descriptionText} align='center' >
+            Try the next-generation yield-farming automation tool and optimize your returns with over 500 vaults.
+          </Typography>
           <Button
             className={ classes.tryButton }
             variant='contained'
@@ -81,7 +83,7 @@ export default function Multichain({ closeMultichain }) {
             color='secondary'
             endIcon={<ArrowForwardIcon />}
           >
-            <Typography className={ classes.buttonLabel }>Try out <b>multichain.xyz</b></Typography>
+            <Typography className={ classes.buttonLabel }>Try out <b>yieldwolf.finance</b></Typography>
           </Button>
         </div>
         <div className={ classes.bottomActions }>
